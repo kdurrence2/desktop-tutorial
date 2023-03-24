@@ -3,25 +3,29 @@ body {
     background-color: #F2F2F2;
 }
 p {
-    font-size: 12pt;
     font-family: Arial, Helvetica, sans-serif;
     color: #222222;
     text-align: center;
-    margin-left: 120px;
-    margin-right: 120px;
-    line-height: 40px;
+    line-height: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 p.body {
+    font-size: 16pt;
     margin-left: 180px;
     margin-right: 180px;
+    text-align: justify;
 }
 h1, h2 {
     font-size: 24 pt;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding: 4px;
-    text-decoration-line: underline;
+    border: 2px;
+    border-style: solid;
+    margin-left: 400px;
+    margin-right: 400px;
 }
 .link {
     color: lightcoral;
@@ -115,6 +119,38 @@ li#page3 a:hover {
 #coming_soon {
     padding-top: 80px;
 }
+.red_border {
+    border-color: crimson;
+}
+.yellow_border {
+    border-color: gold;
+}
+#blue_border {
+    border-color: mediumblue;
+}
+#green_border {
+    border-color: green;
+}
+#red_under {
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-thickness: 3px;
+}
+#blue_under {
+    text-decoration: underline;
+    text-decoration-color: mediumblue;
+    text-decoration-thickness: 3px;
+}
+#green_under {
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 3px;
+}
+#yellow_under {
+    text-decoration: underline;
+    text-decoration-color: gold;
+    text-decoration-thickness: 3px;
+}
 /*End Header Icon Centering*/
 
 /*News Styling*/
@@ -145,6 +181,7 @@ ul.news {
     clear: both;
     overflow: hidden;
     margin-top: 72px;
+    font-size: 12pt;
 }
 .contact_info {
     text-align: left;
@@ -184,12 +221,13 @@ small {
 .exhibit {
     height: 440px;
     clear: both;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
     overflow: hidden;
 }
 .ex_info {
-    text-align: center;
+    font-size: 12 px;
+    text-align: center !important;
     float: left;
     width: 50%;
     height: 440px;
@@ -200,14 +238,22 @@ small {
 .ex_img {
     float: left;
     width: 50% !important;
-    height: 400px !important;
     display: inline;
     object-fit: cover !important;
 }
 .ex_title {
     font-style: italic;
     font-size: 16pt;
-    padding-top: 8pt;
+    padding-top: 24pt;
+}
+.ex_detail {
+    padding: 16px;
+}
+.artist {
+    padding: 8px;
+}
+.date {
+    padding: 12px;
 }
 #flowers {
     height: 440px !important;
