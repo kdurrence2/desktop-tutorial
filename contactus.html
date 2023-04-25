@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <title>REAL Art Gallery</title>
+        <meta name="description"
+        content="REAL Art Gallery Information and Art Exhibits"/>
+        <meta name="keywords"
+        content="art gallery, art, exhibits"/>
+        <meta http-equiv="'author"
+        name="Kaitlyn Durrnce"/>
+    </head>
+    <body>
+        <!--Beginning of Main Header and Nav Bar-->
+        <div class="header">
+            <a href="index.html"><img id="logo" src="img/Logo.png" alt="REAL Art Gallery Logo"></a>
+            <ul class="nav">
+                <li class="nav" id="home"><a href="index.html">Home</a></li>
+                <li class="nav" id="exhibits"><a href="exhibits.html">Exhibits</a></li>
+                <li class="nav" id="contactus"><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <br>
+        </div> <!--End of Main Header and Nav Bar-->
+        <!-- Statrt of Body Content-->
+        <div>
+            <img class="Icon" id="contact" src="img/ContactUs.png" alt="Contact Us Icon">
+            <h1 class="red_border">Contact Us</h1>
+        </div>
+        <div class="exhibit" id="curator"> <!--Word from Curator-->
+            <div class="ex_info" id="curator_info">
+                <p class="ex_title"><em>From the Head Curator:</em></p>
+                <p class="ex_detail">Thank you for your interest in contacting our gallery. We welcome all guests, artists, and donors to reach out
+                    with any questions using the form below.
+                </p>
+                <p class="date"><em>Head Curator: K. Durrence</em></p>
+            </div>
+            <img class="ex_img" id="curator" src="img/curator.jpg" alt="Head Curator K. Durrence"/>
+        </div> 
+        <!--End of Word from Curator-->
+        <br>
+        <br>
+        <p><em>If you are interested in purchasing artwork from an exhibit, please call the curator's office at 770-123-7654.</em></p>
+        <br>
+        <hr>
+        <br>
+        <div class="form">
+            <div> <!--Beginning of Form-->
+                <h2 id="form_head">Contact Us</h2>
+                <p>Please complete the form below and a staff member will reach out to you within 2-3 business days.</p> 
+                <p>(Required fields are marked with an *)</p>
+            </div>
+            <form class="form" action="it3203sp.php" method="post">
+                <fieldset> <!--Contact Details-->
+                    <br>
+                    <div class="width-45">
+                        <label for="fname">First Name:*</label>
+                    </div>
+                    <div class="width-55">
+                        <input type="text" id="fname" name="First Name" placeholder="First Name" required><br>
+                    </div>
+                    <div class="width-45">
+                        <label for="lname">Last Name:*</label>
+                    </div>
+                    <div class="width-55">
+                        <input type="text" id="lname" name="Last Name" placeholder="Last Name" required><br>
+                    </div>
+                    <div class="width-45">
+                        <label for="tel_number">Phone Number:*</label>
+                    </div>
+                    <div class="width-55">
+                        <input type="tel" id="tel_number" name="Phone Number" placeholder="123-456-7890" required
+                        pattern="[0-9] {3}-[0-9] {3}-[0-9]{4}"><br>
+                    </div>
+                    <div class="width-45">
+                        <label for="email">Email Address:*</label>
+                    </div>
+                    <div class="width-55">
+                        <input type="email" id="email" name="Email" placeholder="Email Address" required><br>
+                    </div>
+                </fieldset>
+                <fieldset> <!--Contact Preference-->
+                    <div class="width-45">
+                        <label for="preference">Prefered Contact Method: *</label>
+                    </div>
+                    <div class="width-55">
+                        <input type="radio" id="specifyColor" name="preference" value="By Phone">
+                        <label for="specifyColor">By Phone</label><br>
+                        <input type="radio" id="specifyColor" name="preference" value="By Email">
+                        <label for="specifyColor">By Email</label><br>
+                    </div>
+                </fieldset>
+                <fieldset> <!--Topic of Inquiry-->
+                    <div class="width-45">
+                        <label for="topic">Topic of Inquiry: *</label>
+                    </div>
+                    <div class="width-55">
+                        <select id="topic" name="Topic" required>
+                            <option value="Visiting the Gallery">Visiting the Gallery</option>
+                            <option value="Art Submission">Art Submission</option>
+                            <option value="Donations">Donations</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset> <!--Additional Information that the User Can Provide if Needed-->
+                    <div class="width-45">
+                        <label for="comment">Additional Information:</label><br>
+                    </div>
+                    <div class="width-55">
+                        <textarea name="comments" id="comment" placeholder="Please utilize this space to provide any additional context."></textarea><br>
+                    </div>
+                </fieldset>
+                <fieldset> <!--Newsletter Subscription-->
+                    <label for="specifyColor">Would you like to recieve our monthly e-newsletter with information on new exhibits, deals, and events?</label>
+                    <input type="radio" id="specifyColor" name="newsletter" value="Yes">
+                    <label for="specifyColor">Yes</label><br>
+                    <input type="radio" id="specifyColor" name="newsletter" value="No">
+                    <label for="specifyColor">No</label><br>
+                </fieldset>
+                <fieldset> <!--Submit or Reset the Form-->
+                    <div class="buttons">
+                        <input id="submit" type="submit" value="Submit" onsubmit="alert('Thank you. Your inquery has been submitted.');">
+                        <input id="reset" type="reset" onclick="alert('The form has been reset. Your data has been deleted.');">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!--End of Form-->
+        <div class="footer"> <!--Footer and Class Project Note-->
+            <div class="contact_info">
+                <p id="contact_head"><b>REAL Art Gallery</b></p>
+                <p><address>123 Design Lane, Marietta, GA 12345</address></p>
+                <p id="contact_phone">770-123-4567</p>
+                <a class="link" href="mailto:realartgallery@email.com">realartgallery@email.com</a>
+                <p><small>This is for a class project. <a class="link" href="http://it5443.azurewebsites.net">http://it5443.azurewebsites.net</a></small></p>
+            </div>
+            <div class="table">
+                <table class="table">
+                    <tr>
+                        <th>Hours</th>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>9:00 am - 5:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>9:00 am - 5:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9:00 am - 6:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 am - 6:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>1:00 pm - 4:00 pm</td>
+                    </tr>
+                </table>
+            </div>
+        </div> <!--End Footer-->
+    </body>
+</html>

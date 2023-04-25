@@ -1,4 +1,4 @@
-/*General Body Styling*/
+/*General Styling*/
 body {
     background-color: #F2F2F2;
 }
@@ -30,9 +30,12 @@ h1, h2 {
 .link {
     color: lightcoral;
 }
+a:visited {
+    color: darkred;
+}
 /*End General Styling*/
 
-/* Header Styling*/
+/*Header Styling*/
 .header {
     padding: 0px;
     color: #222222;
@@ -57,7 +60,8 @@ li.nav {
 li a {
     display: block;
     padding: 0px;
-    width: 88px;
+    margin: 8px;
+    width: 96 px;
     background-color: #F2F2F2;
     text-decoration: none;
     text-align: center;
@@ -72,7 +76,7 @@ li#exhibits a:hover {
     font-style: bold;
     font-size: 24px;
 }
-li#page3 a:hover {
+li#contactus a:hover {
     color: green;
     font-style: bold;
     font-size: 24px;
@@ -118,6 +122,9 @@ li#page3 a:hover {
 }
 #coming_soon {
     padding-top: 80px;
+}
+#contact {
+    width: 100px;
 }
 .red_border {
     border-color: crimson;
@@ -267,4 +274,104 @@ small {
 #upcoming {
     margin-bottom: 144px !important;
 }
+#curator {
+    height: 368px !important;
+    margin-top: 24px;
+}
+#curator_info {
+    background-color: #F2F2F2 !important;
+    opacity: 1.0;
+    padding-top: 32px;
+}
 /*End of Card Styling*/
+/*Form Styling*/
+form {
+    border: 1px solid darkgrey;
+}
+.form {
+    margin: auto;
+    width: 75%;
+}
+#form_head {
+    margin: 16px;
+}
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+}
+input {
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px;
+}
+input:hover {
+    border: 1px solid red
+}
+input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+input[type=text], [type=tel], [type=email] {
+    width: 75%;
+    padding: 12px;
+}
+select {
+    width: 85%;
+    padding: 4px;
+    outline: none;
+    font-size: 16px;
+}
+textarea {
+    width: 85%;
+    height: 128px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input[type=submit], input[type=reset] {
+    padding: 12px 16px 12px 16px;
+    font-size: 18px;
+    background-color: darkgrey;
+    background-image: linear-gradient(silver, grey);
+    color: #F2F2F2;
+    border: 1px solid;
+    border-color: #222222;
+    text-shadow: 2px 2px 2px #525252;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px  darkgrey;
+    margin: 24px;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: lightcoral;
+    background-image: linear-gradient(lightcoral, indianred);
+    box-shadow: 3px 3px 3px  grey;
+}
+input [type=submit]:active, input[type=reset]:active {
+    transform: translateY(2px)
+}
+fieldset {
+    border: none;
+}
+.width-45 {
+    float: left;
+    width: 45%;
+    margin-top: 8px;
+}
+.width-55 {
+    float:left;
+    width: 55%;
+    margin-top: 8px;
+}
+#specifyColor {
+    accent-color: red;
+}
+/*End of Form Styling*/
+/* End of Main Content Styling */
